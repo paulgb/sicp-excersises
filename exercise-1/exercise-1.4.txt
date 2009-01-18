@@ -1,0 +1,1 @@
+This procedure takes two arguments, a and b. If b is positive, it is added to a, otherwise it is subtracted. In effect, a + abs(b).

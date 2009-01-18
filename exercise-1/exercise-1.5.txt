@@ -1,0 +1,2 @@
+Normal order: the procedure will return 0
+Applicative order: the procedure will return 0
