@@ -1,0 +1,6 @@
+a. 5 times.
+12.15 / (3^5) = 0.05 < 0.1
+
+b.
+Steps: O(log(a))
+Space: O(log(a))
