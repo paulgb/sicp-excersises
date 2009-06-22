@@ -1,0 +1,48 @@
+
+Suppose we have two intervals A and B.
+
+mid(A) = a
+lower(A) = a - x
+upper(A) = a + x
+width(A) = x
+
+mid(B) = b
+lower(B) = b - y
+upper(B) = b + y
+width(B) = y
+
+C = A + B
+lower(C) = lower(A) + lower(B)
+         = a - x + b - y
+         = (a + b) - (x + y)
+
+upper(C) = upper(A) + upper(B)
+         = a + x + b + y
+         = (a + b) + (x + y)
+
+width(C) = x + y
+
+==============================================
+
+let A = interval(0, 1)
+let B = interval(0, 2)
+
+width(A) = 1
+width(B) = 1
+
+lower(A * B) = 0
+upper(A * B) = 2
+width(A * B) = 1
+
+let C = interval(1, 2)
+let D = interval(2, 3)
+
+width(C) = 1
+width(D) = 1
+
+lower(C * D) = 2
+lower(C * D) = 6
+width(C * D) = 2
+
+Since width(A) = width(B) = width(C) = width(D), but width(A * B) != width(C * D), we know that the width of multiplied intervals is not a function of the widths of the factors.
+

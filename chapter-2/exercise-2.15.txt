@@ -1,0 +1,3 @@
+
+Yes, he is right. As long as the formula is algebraically correct, the bounds will be correct, but not neccesarily the closest bounds possible. It is not possible for an imprecise value to be at both ends of its interval at the same time, but if it is used in a calculation more than once the result will be calculated as if it could be.
+

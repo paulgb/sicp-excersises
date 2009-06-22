@@ -1,0 +1,13 @@
+
+The percentage tolerance of two multiplied intervals is approximately the sum of their tolerances.
+
+i = (a +- (a * t1)) * (b +- (b * t2))
+
+= interval((a - a*t1/100)(b - b*t2/100) .. (a + a*t1/100)(b + b*t2/100))
+= interval((ab - a*b*t2/100 - a*b*t1/100 + a*b*t1*t2/10000) .. (ab + a*b*t2/100 + a*b*t1/100 + a*b*t1*t2/10000))
+
+center(i) = a*b + a*b*t1*t2/10000 ~= a*b for low enough t1, t2
+width(i) = a*b*t1/100 + a*b*t2/100
+         = a*b*(t1+t2)/100
+         ~= center(i) * (t1 + t2) / 100
+

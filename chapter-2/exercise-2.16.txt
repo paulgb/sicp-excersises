@@ -1,0 +1,3 @@
+
+It may be possible to devise an interval-arithmatic package that would take this into account, but it would likely require calculating the results of the equation at every possible set of extreme values.
+
